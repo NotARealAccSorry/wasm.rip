@@ -50,11 +50,10 @@
   },
   {
     "id": 8,
-    "name": "Approaches",
-    "gameUrl": "files/Approaches/index.html",
-    "imageUrl": "img/approaches.png",
-    "porter": "shxyder"
-  },
+    "name": "One Shot: World Machine Edition",
+    "gameUrl": "files/oneshot-wme/index.html",
+    "imageUrl": "img/oneshot.jpg",
+    "porter": "shayder"
   {
     "id": 9,
     "name": "Helltaker",
@@ -75,13 +74,6 @@
     "gameUrl": "files/diceAmillion/diceamillion.html",
     "imageUrl": "img/diceamillion.png",
     "porter": "NotRexed"
-  },
-  {
-    "id": 12,
-    "name": "Want Half Of A Mounds Bar",
-    "gameUrl": "files/mound/index.html",
-    "imageUrl": "img/image.png",
-    "porter": "dude"
   },
   {
     "id": 13,
