@@ -120,16 +120,30 @@
   },
   {
     "id": 18,
-    "name": "Happy room",
+    "name": "Happy Room",
     "gameUrl": "files/happy-room/index.html",
     "imageUrl": "img/happy-room.png",
     "porter": "gurtmuncher"
   },
   {
     "id": 19,
-    "name": "The Adventures Of Sir Kicksalot",
-    "gameUrl": "files/sir-kicksalot/index.html",
-    "imageUrl": "img/sirkicksalot.png",
-    "porter": "turg"
+    "name": "Inscryption",
+    "gameUrl": "files/inscryption/index.html",
+    "imageUrl": "img/insc.png",
+    "porter": "reeyuki"
+  },
+  {
+    "id": 20,
+    "name": "Lobotomy Corporation",
+    "gameUrl": "files/lob-corp/index.html",
+    "imageUrl": "img/lob-corp.png",
+    "porter": "reeyuki"
+  },
+  {
+    "id": 21,
+    "name": "Ages of Conflict",
+    "gameUrl": "files/aoc/index.html",
+    "imageUrl": "img/aoc.png",
+    "porter": "sexyplankton"
   }
 ]
