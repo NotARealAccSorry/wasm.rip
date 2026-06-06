@@ -22,68 +22,66 @@
     <main>
       <div class="container">
         <h1>wasm.rip</h1>
-       <section class="group-section" id="members">
-  <h2>members</h2>
-  <div class="group-grid">
+        <section class="group-section" id="members">
+          <h2>members</h2>
+          <div class="group-grid">
+            <a class="group-memb" href="https://github.com" target="_blank">
+              <img src="https://github.com.png" />
+              <span>shayder</span>
+            </a>
 
-    
-    <a class="group-memb" href="https://github.com/larpinguser" target="_blank">
-      <img src="https://github.com/larpinguser.png" />
-      <span>shayder</span>
-    </a>
+            <a class="group-memb" href="https://github.com" target="_blank">
+              <img src="https://github.com.png" />
+              <span>crackers</span>
+            </a>
 
-    <a class="group-memb" href="https://github.com/woahhcrackers" target="_blank">
-      <img src="https://github.com/woahhcrackers.png" />
-      <span>crackers</span>
-    </a>
+            <a class="group-memb" href="https://github.com" target="_blank">
+              <img src="https://github.com.png" />
+              <span>q8j.</span>
+            </a>
 
-    <a class="group-memb" href="https://github.com/q8j-dev" target="_blank">
-      <img src="https://github.com/q8j-dev.png" />
-      <span>q8j.</span>
-    </a>
+            <a class="group-memb" href="https://github.com" target="_blank">
+              <img src="https://github.com.png" />
+              <span>cirsius</span>
+            </a>
 
-    <a class="group-memb" href="https://github.com/cirsius" target="_blank">
-      <img src="https://github.com/cirsius.png" />
-      <span>cirsius</span>
-    </a>
+            <a class="group-memb" href="https://github.com" target="_blank">
+              <img src="img/rexed.webp" />
+              <span>NotRexed</span>
+            </a>
 
-    <a class="group-memb" href="https://github.com/NotRexed" target="_blank">
-      <img src="img/rexed.webp" />
-      <span>NotRexed</span>
-    </a>
+            <a class="group-memb" href="https://github.com" target="_blank">
+              <img src="img/plank.webp" />
+              <span>sexyplankton</span>
+            </a>
 
-    <a class="group-memb" href="https://github.com/SomeRandomFella" target="_blank">
-      <img src="img/plank.webp" />
-      <span>sexyplankton</span>
-    </a>
+            <a class="group-memb" href="https://github.com" target="_blank">
+              <img src="img/sansuke.png" />
+              <span>sunsuke</span>
+            </a>
 
-    <a class="group-memb" href="https://github.com/a1pl" target="_blank">
-      <img src="img/sansuke.png" />
-      <span>sunsuke</span>
-    </a>
+            <a class="group-memb" href="https://github.com" target="_blank">
+              <img src="img/rimuru.png" />
+              <span>gurtmuncher</span>
+            </a>
 
-    <a class="group-memb" href="https://github.com/gurtmuncher" target="_blank">
-      <img src="img/rimuru.png" />
-      <span>gurtmuncher</span>
-    </a>
+            <a class="group-memb" href="https://github.com" target="_blank">
+              <img src="img/reeyuki.png" />
+              <span>reeyuki</span>
+            </a>
 
-    <a class="group-memb" href="https://github.com/reeyuki" target="_blank">
-      <img src="img/reeyuki.png" />
-      <span>reeyuki</span>
-    </a>
+            <a class="group-memb" href="https://github.com" target="_blank">
+              <img src="https://github.com.png" />
+              <span>zxs</span>
+            </a>
 
-    <a class="group-memb" href="https://github.com/darkdragonzxs" target="_blank">
-      <img src="https://github.com/darkdragonzxs.png" />
-      <span>zxs</span>
-    </a>
-
-    <a class="group-memb" href="https://github.com/dashiellbenton" target="_blank">
-      <img src="https://github.com/dashiellbenton.png" />
-      <span>dasher</span>
-    </a>
-
-  </div>
-</section>
+            <a class="group-memb" href="https://github.com" target="_blank">
+              <img src="https://github.com.png" />
+              <span>dasher</span>
+            </a>
+          </div>
+        </section>
+        
         <section class="group-section" id="games">
           <h2>games</h2>
           <div class="game-grid"></div>
@@ -92,16 +90,21 @@
         <section class="group-section" id="about">
           <h2>about us</h2>
           <p class="about-text">
-            a group of people on the internet, porting games, emulators, or
-            tools
+            a group of people on the internet, porting games, emulators, or tools
           </p>
         </section>
       </div>
     </main>
 
-
-
     <script>
+      // --- EXIT PROMPT TRIGGER ---
+      window.addEventListener('beforeunload', (event) => {
+        event.preventDefault();
+        event.returnValue = "leave"; 
+        return "leave";
+      });
+      // ---------------------------
+
       const gameHolder = document.querySelector(".game-grid");
 
       fetch("games.json")
@@ -112,8 +115,6 @@
           );
 
           let showing = false;
-
-          // the urge to just use innerhtml instead of ts
 
           const renderGames = (list) => {
             gameHolder.innerHTML = "";
@@ -132,7 +133,7 @@
               gameTitle.textContent = game.name;
 
               const gamePorter = document.createElement("span");
-              gamePorter.classList.add("game-desc"); // not rlly a desc but wtv(sexyplankton) -- maybe add one later? todolist prob ( shayder )
+              gamePorter.classList.add("game-desc"); 
               gamePorter.textContent = `port by ${game.porter}`;
 
               gameInfo.appendChild(gameTitle);
@@ -175,16 +176,15 @@
         .catch(() => {
           alert("hi, games failed to load, either someone fucked something up or idk");
         });
-    
     </script>
 
     <footer>
       <div class="container">
-        <a href="https://github.com/wasm-rip">github</a> |
-        <a href="https://discord.gg/uubyGYPHQw">discord</a>
+        <a href="https://github.com">github</a> |
+        <a href="https://discord.gg">discord</a>
         <div class="copyright">
-          © 2026 wasm.rip (hi guys its me crackers i made this site! &
-          sexyplankton) 
+          © 2026 wasm.rip (hi guys its me crackers i made this site! & sexyplankton) 
+        </div>
       </div>
     </footer>
   </body>
