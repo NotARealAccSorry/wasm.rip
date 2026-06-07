@@ -145,5 +145,12 @@
     "gameUrl": "files/wtl/index.html",
     "imageUrl": "img/wtl.jpg",
     "porter": "dasher"
+  },
+  {
+    "id": 23,
+    "name": "fih",
+    "gameUrl": "files/fih/index.html",
+    "imageUrl": "img/fih.png",
+    "porter": "your_username"
   }
 ]
